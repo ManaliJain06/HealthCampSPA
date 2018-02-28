@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Camp SPA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/healthCamp.css">
+    <script type="text/javascript"
+            charset="utf-8"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" charset="utf-8" src="healthVitalScript.js">
+    </script>
+</head>
+<body>
+<div class="site">
+    <header class="bar">
+        <div class="headerSite">
+            <div class="hc1">Health Camp SPA</div>
+            <a href="demographics.html" class="hc2">Demographics</a>
+            <a href="healthVital.html" class="hc3 active">Health Vitals</a>
+            <a href="report.html" class="hc4">Reports</a>
+        </div>
+    </header>
+
+    <main class="details">
+        <form>
+            <div class="form-group row">
+                <label for="height" class="col-sm-4 col-form-label">Height</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="height">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="weight" class="col-sm-4 col-form-label">Weight</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="weight">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="temp" class="col-sm-4 col-form-label">Body Temperature</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="temp">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="rate" class="col-sm-4 col-form-label">Pulse rate</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="rate">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="bp" class="col-sm-4 col-form-label">BP</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="bp">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4 col-form-label"></div>
+                <div class="col-sm-8">
+                    <button type="submit" id="save-vital" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <div class="imageCapture">
+        <div class="vl">  <form>
+            <div class="form-group row">
+                <label for="medication" class="col-sm-4 col-form-label">Medication</label>
+                <div class="col-sm-8">
+                    <textarea id="medication" rows="5" cols="40"> </textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="notes" class="col-sm-4 col-form-label">Notes</label>
+                <div class="col-sm-8">
+                    <textarea id="notes" rows="5" cols="40"> </textarea>
+                </div>
+            </div>
+        </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

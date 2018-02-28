@@ -3,8 +3,8 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 /doc
-/js
 /img
+/js
 .editorconfig
 .htaccess
 robots.txt
@@ -13,4 +13,4 @@ tile.png
 tile-wide.png
 humans.txt
 .gitattributes
-browserconig.xml
+browserconfig.xml

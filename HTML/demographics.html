@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Camp SPA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/healthCamp.css">
+    <script type="text/javascript"
+            charset="utf-8"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" charset="utf-8" src="healthCampScript.js">
+    </script>
+</head>
+<body>
+<div class="site">
+    <header class="bar">
+        <div class="headerSite">
+            <div class="hc1">Health Camp SPA</div>
+            <a href="demographics.html" class="hc2 active">Demographics</a>
+            <a href="healthVital.html" class="hc3">Health Vitals</a>
+            <a href="report.html" class="hc4">Reports</a>
+        </div>
+    </header>
+
+    <main class="details">
+        <form>
+            <div class="form-group row">
+                <label for="firstname" class="col-sm-4 col-form-label">First Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lastname" class="col-sm-4 col-form-label">Gender</label>
+                <div class="col-sm-8">
+                    <select id="gender" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="age" class="col-sm-4 col-form-label">Age</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="age">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="notes" class="col-sm-4 col-form-label">Notes or other details</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="notes">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4 col-form-label"></div>
+                <div class="col-sm-8">
+                    <button id="save_button" type="submit" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <div class="imageCapture">
+        <div class="vl">
+            <div class="col-sm-6 col-form-label">Photo</div>
+            <div class="col-sm-12">
+                <video autoplay></video>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+                <button type="submit" class="btn btn-success" id="capture">Capture</button>
+            </div>
+            <div id="capturedImage" class="col-sm-12">
+            </div>
+            <div id="capturedImage1" class="col-sm-12">
+                <img src="" id="recordtable">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
